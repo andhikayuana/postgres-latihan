@@ -37,7 +37,7 @@ ORDER BY
  last_name DESC;
 ```
 
-## example 3
+### example 3
 
 ```sql
 SELECT
@@ -48,4 +48,16 @@ FROM
 ORDER BY
  first_name ASC,
  last_name DESC;
+```
+
+### example 4
+
+```sql
+SELECT
+ (first_name || ' ' || last_name) full_name,
+ email
+FROM
+ customer
+ORDER BY
+ first_name ASC;
 ```
